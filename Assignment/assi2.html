@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+                width: 500px;
+        margin-inline: auto;
+    }
+    thead{
+        background-color: rgb(237, 150, 19);
+        color: yellow;
+    }
+    tbody{
+        background-color: black;
+    }
+    th{
+        padding: 10px;
+        color: yellow;
+    }
+    tfoot{
+        background-color:rgb(237, 150, 19);
+    }
+    label{
+        color: yellow;
+    }
+    #bt1{
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        margin-left: 70px;
+        height: 30px;
+        width: 100px;
+    }
+    #bt2{
+        background-color:red;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        height: 30px;
+        width: 100px;
+    }
+    
+</style>
+<body>
+    <table>
+        <thead>
+            <td colspan="2"><strong>Sign up</strong></td>
+        </thead>
+        <tbody>
+            <tr>
+                <th>first name</th>
+                <td><input type="text" placeholder="Enter first name"></td>
+            </tr>
+            <tr>
+                <th>Last name</th>
+                <td><input type="text" placeholder="Enter last name"></td>
+            </tr>
+            <tr>
+                <th>Date of birth</th>
+                <td><select>
+                    <option >Date</option>
+                </select>
+                <select>
+                    <option >Month</option>
+                </select>
+                <select>
+                    <option >Year</option>
+                </select>
+            </td>
+            
+        </td>
+            <tr>
+                <th>Gender</th>
+                <td><input type="radio" name="rd1"><label for="rd1">Male</label>
+                <input type="radio" name="rd1" ><label for="rd1">Female</label><br></td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td><select>
+                    <option >Country</option>
+                    <option>India</option>
+                    <option >America</option>
+                </select>
+            </td>
+        
+             </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" placeholder="Enter Email"></td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td><input type="text" placeholder="Enter Phone"></td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <th>Confirm password</th>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+            <td></td>
+            <td><input type="checkbox" name="ch1"><label for="ch1">I Agree to the Term of use</label></td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <td>
+                    <button id="bt1">Submit Query</button>
+                    <button id="bt2">Cancel</button>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

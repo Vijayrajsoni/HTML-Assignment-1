@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    table{
+        width: 40%;
+        height: 400px;
+        margin-inline: auto;
+        padding: 5px;
+    }
+    td{
+         padding: 10px;
+    }
+    thead{
+        background-color: rgb(248, 217, 175);
+        color: red;
+        border-color: red;
+    }
+    tbody,tfoot{ 
+        background-color: rgb(0, 195, 255);
+    }
+    button{
+        margin-left: 20px;
+        height: 40px;
+        width: 130px;
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+</style>
+<body>
+    <table border="1">
+        <thead>
+            <th colspan="2"><h1>Registration form</h1></th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Enter name</th>
+                <td><input type="text" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <th>Enter password</th>
+                <td><input type="password" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <th>Enter Address</th>
+                <td><textarea rows="4" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <th>Select Game </th>
+                <td><input type="checkbox" name="ch1" ><label for="ch1">Hockey</label><br>
+                    <input type="checkbox" name="ch2" ><label for="ch2">Football</label><br>
+                    <input type="checkbox" name="ch3" ><label for="ch3">Badminton</label><br>
+                    <input type="checkbox" name="ch4" ><label for="ch4">Cricket</label><br>
+                    <input type="checkbox" name="ch5" ><label for="ch5">Vollyball</label><br></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td><input type="radio" name="rd1"><label for="rd1">Male</label>
+                <input type="radio" name="rd1" ><label for="rd1">Female</label><br></td>
+            </tr>
+            <tr>
+                <th>Select ur Age</th>
+                <td><select>
+                    <option >select</option>
+                    <option>under 18</option>
+                    <option > above 18</option>
+                </select>
+            </td>
+        
+             </tr>
+            <tr>
+                <th>Select Photo</th>
+                <td><input type="file"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+            <td colspan="2">
+            <button>Click Me</button>
+            <button>Reset</button>
+            <button>Submit Form</button>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

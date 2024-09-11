@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation Bar</title>
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #800000;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #555;
+        }
+
+        .search-container {
+            float: right;
+        }
+
+        .search-container input[type="text"] {
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            border: none;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        .search-container button {
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background-color: #ffc107;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About Us</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Contact</a></li>
+  <li class="search-container">
+    <input type="text" placeholder="Search...">
+    <button type="submit">Search</button>
+  </li>
+</ul>
+
+</body>
+</html>
